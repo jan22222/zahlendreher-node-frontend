@@ -14,7 +14,7 @@ function Home() {
   const [values, setValues] = useState([]);
   const [haben, setHaben] = useState([]);
   const [soll, setSoll] = useState([]);
-  const [tasks, setTask] = useState([{id:1, title:"sadfsdf", description:"sdfsdf"}]);
+  // const [tasks, setTask] = useState([{id:1, title:"sadfsdf", description:"sdfsdf"}]);
   var ASoll = []
 
   var AHaben = []
@@ -72,7 +72,7 @@ function Home() {
 
   return (
     <div>
-      <h1>You see here the task with id {task.id}</h1>
+      {/* <h1>You see here the task with id {task.id}</h1>
       <h1>Title: {task.title}</h1>
       <h1>Description: {task.description}</h1>
       <div className="select-container">
@@ -81,7 +81,7 @@ function Home() {
               <option value={task.id}>{task.title}</option>
             ))}
           </select>
-      </div>
+      </div> */}
       {/* File Uploader */}
       <input
         type="file"
