@@ -6,7 +6,7 @@ import axios from "axios";
 // user name and password and a submit button
 // and password should be 8 character atleast
 
-class Login extends React.Component {
+class Register extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
