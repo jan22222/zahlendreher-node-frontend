@@ -17,7 +17,7 @@ const required = (value) => {
   }
 };
 
-const Login = () => {
+const CreateTask = () => {
   const form = useRef();
   const checkBtn = useRef();
 
@@ -126,4 +126,4 @@ const Login = () => {
   );
 };
 
-export default Login;
+export default CreateTask;

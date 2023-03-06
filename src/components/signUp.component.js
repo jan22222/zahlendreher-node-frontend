@@ -63,16 +63,16 @@ class Register extends React.Component {
     //console.log(isValid);
 
     if (isValid) {
-      //console.log(this.state)
-      axios
-        .post("https://zahlendreher-node-backend-r9tg.onrender.com/signup", this.state)
-        .then(response => {
-          console.log(response);
-          alert("submitted");
-        })
-        .catch(error => {
-          console.log(error);
-        });
+      console.log(this.state)
+      axios.post("https://zahlendreher-node-backend-r9tg.onrender.com/signup", 
+      {"username": this.state.username, "email": this.state.email, "role": this.state.role, "password" : this.state.password }, 
+        {
+        headers: {'Content-Type': 'application/json'}
+      }).then(function(response) {
+        console.log(response);
+      }).catch(function(error) {
+        console.log(error.response.data);
+      })      
 
       this.setState({
         username: "",
