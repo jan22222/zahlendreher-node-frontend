@@ -1,7 +1,7 @@
 import axios from 'axios';
 import authHeader from './auth-header';
 
-const API_URL = 'https://zahlendreher-node-backend-r9tg.onrender.com/';
+const API_URL = 'https://copper-cuttlefish-garb.cyclic.app/';
 
 class UserService {
   getAllTasks() {

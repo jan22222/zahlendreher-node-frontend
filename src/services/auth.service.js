@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const API_URL = "https://zahlendreher-node-backend-r9tg.onrender.com/";
+const API_URL = "https://copper-cuttlefish-garb.cyclic.app/";
 
 class AuthService {
   login(username, password) {
